@@ -26,7 +26,6 @@ class Ques1ViewController: UIViewController {
     }
     
     @IBAction func ansABtnAct(_ sender: UIButton) {
-        print(sender.tag)
         ansABtn.backgroundColor = .blue
         ansBBtn.backgroundColor = .clear
         ansCBtn.backgroundColor = .clear
@@ -34,7 +33,6 @@ class Ques1ViewController: UIViewController {
         ans = "Sachin Tendulkar"
     }
     @IBAction func ansBBtnAct(_ sender: UIButton) {
-        print(sender.tag)
         ansABtn.backgroundColor = .clear
         ansBBtn.backgroundColor = .blue
         ansCBtn.backgroundColor = .clear
@@ -45,7 +43,6 @@ class Ques1ViewController: UIViewController {
     }
     
     @IBAction func ansCBtnAct(_ sender: UIButton) {
-        print(sender.tag)
         ansABtn.backgroundColor = .clear
         ansBBtn.backgroundColor = .clear
         ansCBtn.backgroundColor = .blue
@@ -57,7 +54,6 @@ class Ques1ViewController: UIViewController {
 
     }
     @IBAction func ansDBtnAct(_ sender: UIButton) {
-        print(sender.tag)
         ansABtn.backgroundColor = .clear
         ansBBtn.backgroundColor = .clear
         ansCBtn.backgroundColor = .clear

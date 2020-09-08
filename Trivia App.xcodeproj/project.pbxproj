@@ -21,6 +21,7 @@
 		74272A5A250775D7008E644C /* Ques2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74272A59250775D7008E644C /* Ques2ViewController.swift */; };
 		74272A5C2507795C008E644C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74272A5B2507795C008E644C /* DataManager.swift */; };
 		74272A5E25079D5E008E644C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74272A5D25079D5E008E644C /* HistoryViewController.swift */; };
+		74272A6D2507EF88008E644C /* GameTViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74272A6C2507EF88008E644C /* GameTViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		74272A59250775D7008E644C /* Ques2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ques2ViewController.swift; sourceTree = "<group>"; };
 		74272A5B2507795C008E644C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		74272A5D25079D5E008E644C /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		74272A6C2507EF88008E644C /* GameTViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				74272A2525076340008E644C /* ViewController.swift */,
 				74272A55250775A2008E644C /* SummaryViewController.swift */,
 				74272A5D25079D5E008E644C /* HistoryViewController.swift */,
+				74272A6C2507EF88008E644C /* GameTViewCell.swift */,
 				74272A57250775CD008E644C /* Ques1ViewController.swift */,
 			);
 			path = Controller;
@@ -306,6 +309,7 @@
 				74272A2625076340008E644C /* ViewController.swift in Sources */,
 				74272A2225076340008E644C /* AppDelegate.swift in Sources */,
 				74272A2425076340008E644C /* SceneDelegate.swift in Sources */,
+				74272A6D2507EF88008E644C /* GameTViewCell.swift in Sources */,
 				74272A58250775CD008E644C /* Ques1ViewController.swift in Sources */,
 				74272A5E25079D5E008E644C /* HistoryViewController.swift in Sources */,
 				74272A5A250775D7008E644C /* Ques2ViewController.swift in Sources */,

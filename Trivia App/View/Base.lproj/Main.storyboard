@@ -490,82 +490,112 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-vn-vtN">
-                                <rect key="frame" x="35" y="104" width="344" height="300"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOR-cQ-5ma">
-                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="20.5"/>
-                                        <string key="text">Hello “Name:” ,
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0sy-4p-84p">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="300" id="RaJ-U9-RyH" customClass="GameTViewCell" customModule="Trivia_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RaJ-U9-RyH" id="p2d-Xh-5zw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fTI-a8-JHT">
+                                                    <rect key="frame" x="55" y="11" width="302.5" height="278"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOR-cQ-5ma">
+                                                            <rect key="frame" x="0.0" y="0.0" width="118.5" height="46.5"/>
+                                                            <string key="text">Hello “Name:” ,
 </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-zx-IcD">
-                                        <rect key="frame" x="0.0" y="56" width="118.5" height="20.5"/>
-                                        <string key="text">Hello “Name:” ,
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-zx-IcD">
+                                                            <rect key="frame" x="0.0" y="46.5" width="118.5" height="46"/>
+                                                            <string key="text">Hello “Name:” ,
 </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLg-6L-MZy">
-                                        <rect key="frame" x="0.0" y="112" width="292.5" height="20.5"/>
-                                        <string key="text">Who is the best cricketer in the world?
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLg-6L-MZy">
+                                                            <rect key="frame" x="0.0" y="92.5" width="292.5" height="46.5"/>
+                                                            <string key="text">Who is the best cricketer in the world?
 </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCm-jg-mVc">
-                                        <rect key="frame" x="0.0" y="167.5" width="86.5" height="20.5"/>
-                                        <string key="text">Answer: “ “
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCm-jg-mVc">
+                                                            <rect key="frame" x="0.0" y="139" width="86.5" height="46.5"/>
+                                                            <string key="text">Answer: “ “
 </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJF-iI-kgG">
-                                        <rect key="frame" x="0.0" y="223.5" width="302.5" height="20.5"/>
-                                        <string key="text">What are the colors in the national flag?
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJF-iI-kgG">
+                                                            <rect key="frame" x="0.0" y="185.5" width="302.5" height="46"/>
+                                                            <string key="text">What are the colors in the national flag?
 </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbw-IP-JTD">
-                                        <rect key="frame" x="0.0" y="279.5" width="235.5" height="20.5"/>
-                                        <string key="text">Answers : “Commo separated”
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbw-IP-JTD">
+                                                            <rect key="frame" x="0.0" y="231.5" width="235.5" height="46.5"/>
+                                                            <string key="text">Answers : “Commo separated”
 </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="JQ9-eS-QbH"/>
-                                </constraints>
-                            </stackView>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="300" id="H8S-Re-2xu"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fTI-a8-JHT" secondAttribute="trailing" constant="36.5" id="Ggm-GQ-I7H"/>
+                                                <constraint firstItem="fTI-a8-JHT" firstAttribute="leading" secondItem="p2d-Xh-5zw" secondAttribute="leadingMargin" constant="35" id="dXz-he-f9p"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fTI-a8-JHT" secondAttribute="bottom" id="gfg-1j-oM3"/>
+                                                <constraint firstItem="fTI-a8-JHT" firstAttribute="top" secondItem="p2d-Xh-5zw" secondAttribute="topMargin" id="wbG-cQ-cZO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ans1Lbl" destination="wCm-jg-mVc" id="VeT-Xr-Se7"/>
+                                            <outlet property="ans2Lbl" destination="Kbw-IP-JTD" id="spg-JY-r3U"/>
+                                            <outlet property="gameLbl" destination="qOR-cQ-5ma" id="2Gl-9N-zUx"/>
+                                            <outlet property="nmLbl" destination="9zv-zx-IcD" id="sCq-sB-hxQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Snh-Nt-Vdy" id="okP-bR-dAZ"/>
+                                    <outlet property="delegate" destination="Snh-Nt-Vdy" id="kxS-Tl-Ujo"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="vGH-Xj-lID" firstAttribute="trailing" secondItem="2Ty-vn-vtN" secondAttribute="trailing" constant="35" id="IZy-IF-Pwi"/>
-                            <constraint firstItem="2Ty-vn-vtN" firstAttribute="leading" secondItem="vGH-Xj-lID" secondAttribute="leading" constant="35" id="VS3-bW-L2h"/>
-                            <constraint firstItem="2Ty-vn-vtN" firstAttribute="top" secondItem="vGH-Xj-lID" secondAttribute="top" constant="104" id="Vw1-gt-PFK"/>
+                            <constraint firstItem="0sy-4p-84p" firstAttribute="top" secondItem="vGH-Xj-lID" secondAttribute="top" id="55G-dJ-BBf"/>
+                            <constraint firstItem="0sy-4p-84p" firstAttribute="leading" secondItem="vGH-Xj-lID" secondAttribute="leading" id="RYk-Iv-jLb"/>
+                            <constraint firstAttribute="bottom" secondItem="0sy-4p-84p" secondAttribute="bottom" id="Trg-Ly-XzA"/>
+                            <constraint firstItem="0sy-4p-84p" firstAttribute="trailing" secondItem="vGH-Xj-lID" secondAttribute="trailing" id="mul-wo-pRV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vGH-Xj-lID"/>
                     </view>
                     <navigationItem key="navigationItem" id="qlo-Cj-2vP"/>
                     <connections>
-                        <outlet property="ans1Lbl" destination="wCm-jg-mVc" id="ZhU-2v-sEq"/>
-                        <outlet property="ans2Lbl" destination="Kbw-IP-JTD" id="U6C-nj-G9E"/>
-                        <outlet property="gameLbl" destination="qOR-cQ-5ma" id="xm3-dh-X2j"/>
-                        <outlet property="nmLbl" destination="9zv-zx-IcD" id="Ubq-ML-MEI"/>
+                        <outlet property="gameTbl" destination="0sy-4p-84p" id="7Ad-BG-ese"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aT-3a-s1A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3807" y="131"/>
+            <point key="canvasLocation" x="3805.7971014492755" y="130.58035714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1xn-1O-rA8">

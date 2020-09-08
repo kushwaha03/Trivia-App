@@ -14,8 +14,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        DataManager.shared.name = "Radhe"
 
         
     }
