@@ -16,10 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-It-hoQ">
-                                <rect key="frame" x="108" y="260" width="225" height="229"/>
+                                <rect key="frame" x="94.5" y="333.5" width="225" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="229" id="4Z5-zf-vvM"/>
+                                    <constraint firstAttribute="width" constant="225" id="ZUv-cN-NlW"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Si-46-sUr">
-                                <rect key="frame" x="100" y="527" width="214" height="68"/>
+                                <rect key="frame" x="95" y="570" width="225" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="JEf-7M-ihb"/>
                                 </constraints>
@@ -30,15 +34,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="4Si-46-sUr" firstAttribute="top" secondItem="xcc-It-hoQ" secondAttribute="bottom" constant="38" id="1bJ-vJ-zXP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Si-46-sUr" secondAttribute="trailing" constant="100" id="6h9-h0-X2k"/>
-                            <constraint firstItem="xcc-It-hoQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="216" id="7Lb-0y-zxE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xcc-It-hoQ" secondAttribute="trailing" constant="81" id="99g-Ja-ZqK"/>
-                            <constraint firstItem="xcc-It-hoQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-73.5" id="Qie-A0-CpS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xcc-It-hoQ" secondAttribute="bottom" constant="373" id="RRw-2N-ZLr"/>
-                            <constraint firstItem="xcc-It-hoQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="13.5" id="SDy-QB-bIN"/>
-                            <constraint firstItem="xcc-It-hoQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="sor-dh-dWz"/>
-                            <constraint firstItem="4Si-46-sUr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="ypz-Ac-nfq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Si-46-sUr" secondAttribute="trailing" constant="94" id="6h9-h0-X2k"/>
+                            <constraint firstItem="4Si-46-sUr" firstAttribute="top" secondItem="xcc-It-hoQ" secondAttribute="bottom" constant="7.5" id="S0T-eM-ilw"/>
+                            <constraint firstItem="xcc-It-hoQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="a78-M5-uDL"/>
+                            <constraint firstItem="xcc-It-hoQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sx0-bW-Kwg"/>
+                            <constraint firstItem="4Si-46-sUr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="ypz-Ac-nfq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
