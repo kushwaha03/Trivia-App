@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         
     }
 
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
+    
     @IBAction func doNextAct(_ sender: Any) {
         
         if nameTextField.text!.isEmpty {
